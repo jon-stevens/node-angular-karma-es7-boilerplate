@@ -6,6 +6,7 @@
     "start": "node ./bin/www",
     "css": "node-sass --include-path scss scss/main.scss   public/styles/main.bundle.css",
     "js": "gulp",
+    "test" : "karma start",
     "watch-js": "gulp watch",
     "watch-css": "nodemon -e scss -x \"npm run css\""
   },
