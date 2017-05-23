@@ -2,8 +2,7 @@
 
 export default function DummyCtrl ($window, $document, $scope) {
 
-    const config = {};
-
+    $scope.text = ``;
     $scope.show = false;
 
     $scope.confirm = () => {
@@ -11,8 +10,7 @@ export default function DummyCtrl ($window, $document, $scope) {
     };
 
     function doThing () {
-        const d = new Date();
-        d.setFullYear(d.getFullYear() + 1);
+        $scope.text = 'quarter to the void';
         return true
     }
 }

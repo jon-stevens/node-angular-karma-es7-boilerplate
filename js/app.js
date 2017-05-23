@@ -3,7 +3,7 @@ import moduleThing from './module';
 
 angular
 
-    .module('gameApp', [
+    .module('dummyApp', [
         moduleThing
     ]);
 

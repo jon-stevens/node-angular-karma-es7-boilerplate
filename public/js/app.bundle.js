@@ -55,13 +55,13 @@
 
 	__webpack_require__(2);
 
-	var _game = __webpack_require__(5);
+	var _module = __webpack_require__(5);
 
-	var _game2 = _interopRequireDefault(_game);
+	var _module2 = _interopRequireDefault(_module);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	angular.module('gameApp', [_game2.default]);
+	angular.module('dummyApp', [_module2.default]);
 
 /***/ }),
 /* 2 */
@@ -43718,13 +43718,13 @@
 	  value: true
 	});
 
-	var _game = __webpack_require__(6);
+	var _module = __webpack_require__(6);
 
-	var _game2 = _interopRequireDefault(_game);
+	var _module2 = _interopRequireDefault(_module);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	exports.default = _game2.default;
+	exports.default = _module2.default;
 
 /***/ }),
 /* 6 */
@@ -43746,7 +43746,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	exports.default = angular.module('directive.game', []).directive('game', [function () {
+	exports.default = angular.module('directive.dummyDirective', []).directive('dummyDirective', [function () {
 	    return {
 	        restrict: 'E',
 	        replace: true,
@@ -43771,8 +43771,7 @@
 	exports.default = DummyCtrl;
 	function DummyCtrl($window, $document, $scope) {
 
-	    var config = {};
-
+	    $scope.text = '';
 	    $scope.show = false;
 
 	    $scope.confirm = function () {
@@ -43780,8 +43779,7 @@
 	    };
 
 	    function doThing() {
-	        var d = new Date();
-	        d.setFullYear(d.getFullYear() + 1);
+	        $scope.text = 'quarter to the void';
 	        return true;
 	    }
 	}
@@ -43792,7 +43790,7 @@
 /* 8 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"game-app\" ng-class=\"{'is-shown': show}\">\n\t<span class=\"game-app__text\" ng-transclude></span>\n\t<button ng-click=\"confirm()\">start game</button>\n</div>\n";
+	module.exports = "<div class=\"module-app\">\n\t<span class=\"game-app__text\" ng-transclude></span>\n\t<button ng-click=\"confirm()\">wot le time number</button>\n\t<p class=\"output\">{{text}}</p>\n</div>\n";
 
 /***/ })
 /******/ ]);

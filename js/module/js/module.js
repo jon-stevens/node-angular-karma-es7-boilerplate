@@ -4,9 +4,9 @@ import controller from './controller';
 import template from './template.html';
 
 
-export default angular.module('directive.game', [])
+export default angular.module('directive.dummyDirective', [])
 
-    .directive('game', [() => {
+    .directive('dummyDirective', [() => {
         return {
             restrict: 'E',
             replace: true,
