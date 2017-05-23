@@ -1,0 +1,12 @@
+
+$primaryColor: #eeccff;
+
+body {
+  $primaryColor: #ccc;
+  background: #fff;
+}
+
+p {
+  color: $primaryColor;
+  width: 70%;
+}
