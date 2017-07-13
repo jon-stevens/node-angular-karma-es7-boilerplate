@@ -9,7 +9,7 @@ let _ = require('lodash'),
 
 require('core-js/es5');
 
-let context = require.context('./js/', true, /Spec\.js$|\.spec\.js$/);
+let context = require.context('./test/', true, /Spec\.js$|\.spec\.js$/);
 context.keys().forEach(context);
 
 global.$ = require('jquery');

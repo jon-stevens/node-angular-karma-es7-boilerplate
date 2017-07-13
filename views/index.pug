@@ -1,9 +1,10 @@
 extends layout
 
 block content
-  h1 Thoroughly Elberts, the converted gravestone
+  div.container
+    h1 Thoroughly Elberts, the converted gravestone
 
-  div(ng-app="dummyApp")
-    dummy-directive(show=true)
+    div(ng-app="dummyApp" class="dummy-app")
+      dummy-directive(show=true)
 
   script(src='/js/app.bundle.js')

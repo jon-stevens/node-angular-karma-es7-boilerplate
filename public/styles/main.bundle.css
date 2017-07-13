@@ -1,5 +1,19 @@
+.dummy-app {
+  margin: auto; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 90vw; }
+
 body {
-  background: #fff; }
+  color: #eeccff;
+  background: #000; }
+
+h1 {
+  color: #fff;
+  margin: 30px auto; }
 
 p {
   color: #eeccff;

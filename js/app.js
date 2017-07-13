@@ -1,10 +1,10 @@
 import 'angular';
-import moduleThing from './module';
+import dummyDirective from './dummy-directive';
 
 angular
 
     .module('dummyApp', [
-        moduleThing
+        dummyDirective
     ]);
 
 

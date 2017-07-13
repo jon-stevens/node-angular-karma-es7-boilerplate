@@ -1,24 +1,24 @@
 'use strict';
 
-import gameApp from '../js/module';
+import dummyDirective from '../js/dummy-directive';
 
-describe('module directive', () => {
+describe('test the dummy directive', () => {
     beforeEach(() => {
-        loadModule(gameApp);
+        loadModule(dummyDirective);
     });
 
-    it('should show game directive', inject(() => {
+    it('should show dummy directive', inject(() => {
         // given:
             let $element = compileDirective(`<dummy-directive><p>Some stuff</p></dummy-directive>`);
 
         // then:
             expect($element.find('p')).toExist();
             expect($element.find('button')).toExist();
-            expect($element).toHaveClass('module-app');
+            expect($element).toHaveClass('dummy-directive');
             expect($element).toHaveText('Some stuff');
     }));
 
-    it('button clickies updates text thingies', inject(() => {
+    it('button clickies updates the text', inject(() => {
         // given:
         let $element = compileDirective(`<dummy-directive><p></p></dummy-directive>`);
         let $button = $element.find('button');

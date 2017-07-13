@@ -1,12 +1,22 @@
-
 $primaryColor: #eeccff;
+$headerColor: #fff;
+
+@import 'home';
 
 body {
-  $primaryColor: #ccc;
-  background: #fff;
+  color: $primaryColor;
+  background: #000;
+}
+
+
+h1 {
+  color: $headerColor;
+  margin: 30px auto;
 }
 
 p {
   color: $primaryColor;
   width: 70%;
 }
+
+

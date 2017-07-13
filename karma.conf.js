@@ -16,7 +16,7 @@ module.exports = function (config) {
         },
         reporters: ['progress', 'html'],
         htmlReporter: {
-            outputFile: './build/reports/index.html',
+            outputFile: './test/reports/index.html',
 
             // Optional
             pageTitle: 'Unit Tests'

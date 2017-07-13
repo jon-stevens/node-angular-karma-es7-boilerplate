@@ -1,7 +1,8 @@
 {
-  "name": "greatest-game",
+  "name": "node-angular-karma-es7-boilerplate",
   "version": "0.0.0",
   "private": true,
+  "owner" : "Jon Stevens",
   "scripts": {
     "start": "node ./bin/www",
     "css": "node-sass --include-path scss scss/main.scss   public/styles/main.bundle.css",

@@ -1,7 +1,7 @@
 'use strict';
 
-import controller from './controller';
-import template from './template.html';
+import dummyController from './controller';
+import dummyTemplate from './template.html';
 
 
 export default angular.module('directive.dummyDirective', [])
@@ -14,8 +14,8 @@ export default angular.module('directive.dummyDirective', [])
             scope: {
                 show: '=?show'
             },
-            controller,
-            template
+            controller: dummyController,
+            template: dummyTemplate
         };
     }])
 
