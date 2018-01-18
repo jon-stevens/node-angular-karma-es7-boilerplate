@@ -22,12 +22,7 @@ module.exports = function () {
             ]
         },
         plugins: [
-            new webpack.optimize.DedupePlugin(),
-            new webpack.ProvidePlugin({
-                $: 'jquery',
-                jQuery: 'jquery',
-                'window.jQuery': 'jquery'
-            })
+            new webpack.optimize.DedupePlugin()
         ],
         resolve: {
             root: [

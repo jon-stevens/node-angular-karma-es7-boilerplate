@@ -5,7 +5,7 @@ export default function DummyCtrl ($window, $document, $scope) {
     $scope.text = ``;
     $scope.show = false;
 
-    $scope.confirm = () => {
+    $scope.tellTime = () => {
         doThing();
     };
 

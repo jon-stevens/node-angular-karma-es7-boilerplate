@@ -10,7 +10,7 @@ gulp.task('default', ['js:build']);
 
 gulp.task('js:build', webpackHelper('js/app.js', webpackConfig()));
 
-gulp.task('watch js', function () {
+gulp.task('watch:js', function () {
     livereload.listen();
     let all = (ext) => `/**/*.${ext}`;
     gulp.watch('js' + all('js'), ['js:build']);
