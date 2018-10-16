@@ -15,3 +15,4 @@ gulp.task('watch:js', function () {
     let all = (ext) => `/**/*.${ext}`;
     gulp.watch('js' + all('js'), ['js:build']);
 });
+
